@@ -1,0 +1,40 @@
+{
+    "name": "keenops/wink",
+    "description": "Wink Publishing Framework.",
+    "keywords": [
+        "framework",
+        "laravel",
+        "blog"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kee Nops",
+            "email": "git@kimwalu.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0||^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wink\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Wink\\WinkServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

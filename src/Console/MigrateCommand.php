@@ -2,11 +2,11 @@
 
 namespace Wink\Console;
 
+use Wink\WinkAuthor;
+use Illuminate\Support\Str;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Str;
-use Wink\WinkAuthor;
 
 class MigrateCommand extends Command
 {
@@ -38,7 +38,7 @@ class MigrateCommand extends Command
 
         $this->call('migrate', [
             '--database' => config('wink.database_connection'),
-            '--path' => 'vendor/themsaid/wink/src/Migrations',
+            '--path' => 'vendor/keenops/wink/src/Migrations',
             '--force' => $this->option('force') ?? true,
         ]);
 

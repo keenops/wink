@@ -15,7 +15,7 @@ Wink uses a separate database connection and authentication system so that you d
 To install Wink, run these commands in the root of your Laravel app:
 
 ```sh
-composer require themsaid/wink
+composer require keenops/wink
 php artisan wink:install
 php artisan storage:link
 ```
@@ -71,17 +71,18 @@ php artisan vendor:publish --tag=wink-assets --force
 
 Wink is faceless, it doesn't have any opinions on how you display your content in your frontend. You can use the wink models in your controllers to display the different resources:
 
-- `Wink\WinkPost`
-- `Wink\WinkPage`
-- `Wink\WinkAuthor`
-- `Wink\WinkTag`
+-   `Wink\WinkPost`
+-   `Wink\WinkPage`
+-   `Wink\WinkAuthor`
+-   `Wink\WinkTag`
 
 To display posts and pages content, use `$post->content` instead of `$post->body`. The content will always be in HTML format while the body might be HTML or raw markdown based on the post type.
 
 ## Credits
 
-- [Mohamed Said](https://github.com/themsaid)
-- [All contributors](https://github.com/themsaid/wink/contributors)
+-   [Mohamed Said](https://github.com/themsaid)
+-   [Kee Nops](https://github.com/keenops)
+-   [All contributors](https://github.com/keenops/wink/contributors)
 
 Special thanks to [Caneco](https://twitter.com/caneco) for the logo ✨
 

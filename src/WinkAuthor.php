@@ -156,6 +156,16 @@ class WinkAuthor extends AbstractWinkModel implements Authenticatable
     }
 
     /**
+     * Get the password column name for the user.
+     *
+     * @return string
+     */
+    public function getAuthPasswordName()
+    {
+        return 'password';
+    }
+
+    /**
      * Get the author's avatar.
      *
      * @param  string  $value

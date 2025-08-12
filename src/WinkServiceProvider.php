@@ -3,10 +3,10 @@
 namespace Wink;
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\ServiceProvider;
-use Wink\Http\Controllers\ForgotPasswordController;
-use Wink\Http\Controllers\LoginController;
 use Wink\Http\Middleware\Authenticate;
+use Illuminate\Support\ServiceProvider;
+use Wink\Http\Controllers\LoginController;
+use Wink\Http\Controllers\ForgotPasswordController;
 
 class WinkServiceProvider extends ServiceProvider
 {
